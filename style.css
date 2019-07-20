@@ -102,3 +102,24 @@ footer p {
  .portfolio main {
     background: #fff;
  }
+
+ /* Media Queries */
+
+ @media screen and (max-width: 980px ) 
+
+ { body {
+    position: relative;
+    padding-left: 20px;
+ }
+
+ @media screen and (max-width: 768px )
+
+ { 
+     
+ }
+
+ @media screen and (max-width: 640px )
+
+{ header {
+    position: static;
+}
