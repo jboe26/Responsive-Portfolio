@@ -34,9 +34,12 @@ main .container {
    /* width: 30%;  */
    padding: 20px;
    background: teal;
-   color: white;
-   
+   color: white;   
 }
+
+.name {
+   color: white; 
+   text-decoration: none; }
 header {
    background: #ebebeb;
    border: 1px solid white;
@@ -105,21 +108,8 @@ footer p {
 
  /* Media Queries */
 
- @media screen and (max-width: 980px ) 
-
- { body {
-    margin: auto;
-    padding-left: 20px;
+ @media screen and (max-width: 979px) {
+   body {
+      
+   }
  }
-
- @media screen and (max-width: 768px )
-
- {
-
- }
-
- @media screen and (max-width: 640px )
-
-{ header {
-    position: static;
-}
