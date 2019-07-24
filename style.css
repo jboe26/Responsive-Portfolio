@@ -17,6 +17,7 @@ p {
 }
 h2 {
    color: teal;
+   text-align: center;
 }
 main {
    max-width: 960px;
@@ -39,7 +40,9 @@ main .container {
 
 .name {
    color: white; 
-   text-decoration: none; }
+   text-decoration: none;
+   text-align: center; }
+   
 header {
    background: #ebebeb;
    border: 1px solid white;
@@ -51,6 +54,7 @@ header {
 }
 img {
    float: left;
+   margin: 40px;
 }
 label {
    color: #4aaaa5;
@@ -109,7 +113,12 @@ footer p {
  /* Media Queries */
 
  @media screen and (max-width: 979px) {
-   body {
+   body, footer, nav { 
       
    }
+ }
+
+ @media screen and (max-width: 640px) {
+   body { 
+
  }
