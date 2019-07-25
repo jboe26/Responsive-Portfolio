@@ -15,6 +15,15 @@ p {
    color: #4aaaa5;
    
 }
+
+textarea {
+   height: 200px;
+   width: 100%;
+}
+
+#name {
+   width: 100%;
+}
 h2 {
    color: teal;
    text-align: center;
@@ -43,6 +52,7 @@ main .container {
    text-decoration: none;
    text-align: center; }
    
+   
 header {
    background: #ebebeb;
    border: 1px solid white;
@@ -58,6 +68,7 @@ img {
 }
 label {
    color: #4aaaa5;
+   width: 100%;
 }
 h4 {
    float: left;
@@ -113,12 +124,21 @@ footer p {
  /* Media Queries */
 
  @media screen and (max-width: 979px) {
-   body, footer, nav { 
-      
-   }
- }
+  
+   main { width: 100%; }
 
- @media screen and (max-width: 640px) {
-   body { 
+   nav { width: 50%; }
 
- }
+   header { width: 50%; }
+
+@media screen and (max-width: 768px) {
+
+   main { width: 100%; }
+
+   nav { width: 50%; }
+
+   header { width: 50%; }
+}
+ 
+
+}
