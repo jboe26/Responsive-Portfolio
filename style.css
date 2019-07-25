@@ -131,14 +131,47 @@ footer p {
 
    header { width: 50%; }
 
+ }
+
 @media screen and (max-width: 768px) {
 
-   main { width: 100%; }
+   body { position: relative;
+         max-width: 768;
+          }
 
-   nav { width: 50%; }
+   nav { width: 50%;
+      margin: right; }
 
    header { width: 50%; }
-}
- 
 
+   .left-container { 
+         text-align: center;
+         width: 82%;
+   }
+
+   .container {
+         text-align: center;
+
+   }
 }
+
+@media screen and (max-width: 640px) {
+
+   body { position: static;
+         max-width: 640px;
+         padding: 20px;  }
+
+   nav { margin-right: 25%;
+         text-align: center; }
+
+   header {
+       width: 50%; 
+      }
+
+   .left-container { 
+         text-align: center;
+         width: 85%; }
+
+   .container { text-align: center;}
+}
+
