@@ -72,13 +72,16 @@ h4 {
    color: #4aaaa5;
 }
 
-#contact-form ul {
+#contact-form {
+   padding: 2%;
+   width: 93%;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="text"] {
    margin-bottom: 20px;
  }
  
- #contact-form li {
-   margin-bottom: 10px;
- }
  
  label,
  input[type=text],
@@ -123,7 +126,7 @@ li {
 footer {
    background-color: #ebebeb;
    color: #666;
-   width: 960px;
+   width: 100%;
    margin: auto;
 }
 
@@ -136,10 +139,11 @@ footer p {
  .work {
    position: relative;
    float: left;
-   width: 274px;
+   width: 33%;
    margin: 20px 0 25px;
-   overflow: auto;
+   overflow: hidden;
  }
+
  
  .work:nth-child(even) {
    margin-right: 40px;
@@ -149,6 +153,7 @@ footer p {
    width: 100%;
    border: 0 none;
    opacity: 0.8;
+   margin: 0;
  }
  
  .work h3 {
@@ -177,55 +182,88 @@ footer p {
 
  /* Media Queries */
 
- @media screen and (max-width: 979px) {
+ @media screen and (max-width: 980px) {
   
-   main { width: 100%; }
+   main { width: 70%;
+         margin-right: auto;
+         margin-left: 0; }
 
-   nav { width: 50%; }
+   /* nav { width: 100%; } */
 
-   header { width: 50%; }
+   header { width: 100%; }
 
  }
 
 @media screen and (max-width: 768px) {
 
-   body { position: relative;
-         max-width: 768;
+   body { 
+         width:100%;
           }
 
    nav { width: 50%;
       margin: right; }
 
-   header { width: 50%; }
+   /* header { width: 50%; } */
 
    .left-container { 
          text-align: center;
-         width: 82%;
+         
    }
 
    .container {
          text-align: center;
+   }
 
+   main { 
+      width: 96%;
+      margin: 2%;
+   }
+
+   .portfolio main .work {
+      width: 46%;
+   }
+   .portfolio main .work h3 {
+      bottom: 10px;
    }
 }
 
 @media screen and (max-width: 640px) {
 
-   body { position: static;
-         max-width: 640px;
-         padding: 20px;  }
+   body { position: relative;
+         width: 100%;
+         
+       }
 
-   nav { margin-right: 25%;
-         text-align: center; }
+   nav { 
+         text-align: center;
+         width: 100%;
+          
+      }
+   nav a {
+      display: inline;
+   }
 
    header {
-       width: 50%; 
+       width: 100%; 
       }
 
    .left-container { 
          text-align: center;
-         width: 85%; }
+         width: 100%; }
 
    .container { text-align: center;}
+
+   .portfolio main .work .container
+   {
+      float: none;
+      background-color: #ebebeb;
+      
+
+      
+   }
+
+   .container {
+      background-color: #ebebeb;
+   }
 }
 
