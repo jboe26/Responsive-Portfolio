@@ -245,6 +245,7 @@ footer p {
 
    header {
        width: 100%; 
+       position: static;
       }
 
    .left-container { 
